@@ -1,19 +1,26 @@
-﻿body {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
+﻿/*styling part of the form*/
 label {
     font-size: 20px;
-    color: aquamarine;
+    color: darkblue;
     width:150px;
     display:inline-block;
 }
 
-textarea {
-    font-size: 20px;
+/*making the img size fit page beter*/
+img {
+    width: 400px;
+    height: 300px;
 }
 
+
+/* if you want a certain font size inputted
+textarea {
+    font-size: 20px;
+}*/
+
 /*If you have A.B,C's already*/
-li {
+/*li {
     list-style-type: none;
-}
+}*/
+
+

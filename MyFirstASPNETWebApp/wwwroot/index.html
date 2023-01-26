@@ -2,35 +2,63 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Katerine's Webpage'</title>
+    <title>Katerine's Webpage!</title>
+    <!--adding css nad bootstrap-->
     <link href="css/default.css" rel="stylesheet" />
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!-- add icon link -->
+    <link rel="icon" href="img/icons8-ok-48.png"
+          type="image/x-icon">
 </head>
 <body>
-    <h1>Katherine's Webpage!</h1>
-    <img id="picKat" src="img/profilepic.jpg" />
-    <p>While taking IS413 I hope to learn. I hope that I do not feel inadequate. I hope t</p>
-    <br />
-    <p>Jobs Post Graduation I am interested in:</p>
-    <ol>
-        <li>Tech Consultant</li>
-        <li>Cyber Security</li>
-        <li>To be a mother</li>
-    </ol>
+    <!--header at top-name I go by and picture of me-->
+    <h1>Katherine</h1>
+    <center><img id="picKat" src="img/milanHM.jpg" /></center>
+    <br /><br />
 
-    <h2>Learn More:</h2>
+    <!--paragraph of what I want to learn from this class-->
+    <p>
+        While taking IS413 I hope to learn how to be confident in my coding/debugging abilities. I tend to feel inadequate
+        and frequently stressed. I intend to minimize my stress by focusing on what I have learned instead of every detail of
+        what I have not learned. I am excited for this semester but mostly excited for this semster to be over so I can look
+        back and see what I have accomplished.
+    </p>
+    <br />
+
+    <!--list of potential jobs post graduation-->
+    <h2>Jobs Post Graduation I am interested in:</h2>
+        <ol>
+            <li>Tech Consultant</li>
+            <li>Cyber Security</li>
+            <li>To be a mother</li>
+        </ol>
+
+    <!--Grade calculator using an input form with a button-->
+    <h2>Grade Calculator:</h2>
     <form>
-        <label>From:</label>
-        <input id="g1" /><br />
-        <label>Subject:</label>
-        <input id="g2" /><br />
-        <label>Message:</label>
-        <textarea id="g3" rows="4"></textarea><br />
+        <p>Input percentage scores for each grade category.</p>
+        <label>Assignments:</label>
+        <input id="g1" type="number" min=0 max="100" /><br />
+        <label>Group Project:</label>
+        <input id="g2" type="number" min=0 max="100" /><br />
+        <label>Quizes:</label>
+        <input id="g3" type="number" min=0 max="100" /><br />
+        <label>Midterm Exam:</label>
+        <input id="g4" type="number" min=0 max="100" /><br />
+        <label>Final Exam:</label>
+        <input id="g5" type="number" min=0 max="100" /><br />
+        <label>INTEX:</label>
+        <input id="g6" type="number" min=0 max="100" /><br />
+        <!--This is for allowing a textarea if you want user to input lots of info-->
+        <!--<textarea id="g3" rows="4"></textarea><br />-->
         <input id="btnSend" type="button" value="Send Message" />
-    </form>
+        <!--Prints out results-->
+        <p id="p1"> </p>   
+    </form> 
+
+    <!--links to javascript files-->
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>
     <script src="js/GradeCalc.js"></script>
-    <script src="lib/jquery/jq.js"></script>
-    <!--<script src="lib/jquery/jquery-3.6.3.min.js"></script>-->
 </body>
 </html>
