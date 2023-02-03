@@ -12,6 +12,13 @@ img {
     height: 300px;
 }
 
+/*makes nav bar/all unordered lists to not have bullet points*/
+ul {
+    list-style-type: none;
+    margin: 5px;
+    padding: 0;
+}
+
 
 /* if you want a certain font size inputted
 textarea {

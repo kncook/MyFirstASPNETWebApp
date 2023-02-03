@@ -1,0 +1,36 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model  calculatormodel
+@* ^^^ because we put the model refernece in _View Imports page we do not need to refernece it directtly like this: MyFirstASPNETWebApp.Models.calculatormodel;*@
+@{
+    @*sets variables of title and header to be = to what I assign it*@
+    ViewData["Title"] = "Grade Calculator!";
+    ViewData["Header"] = "Grade Calculator";
+}
+
+<!--Grade calculator using an input form with a button-->
+<form method="post">
+    <p>Input percentage scores for each grade category.</p>
+    <label>Assignments:</label>
+    @*id and asp-for do not need to be the same name.*@
+    <input id="Assignments" asp-for="Assignments" /><br />
+    <label>Group Project:</label>
+    <input id="Projects" asp-for="Projects" /><br />
+    <label>Quizes:</label>
+    <input id="Quizzes" asp-for="Quizzes" /><br />
+    <label>Midterm Exam:</label>
+    <input id="MidExam" asp-for="MidExam" /><br />
+    <label>Final Exam:</label>
+    <input id="FinExam" asp-for="FinExam" /><br />
+    <label>INTEX:</label>
+    <input id="Intex" asp-for="Intex" /><br />
+    @*This is for allowing a textarea if you want user to input lots of info
+        <textarea id="g3" rows="4"></textarea><br />*@
+
+    <button id="btnSend" type="submit">Calculate</button>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    @*Prints out results-not using rn*@
+    <p id="p1"> </p>
+</form>
+

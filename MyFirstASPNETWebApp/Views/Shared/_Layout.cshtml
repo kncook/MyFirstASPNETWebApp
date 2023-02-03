@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<!--Katherine Cook
+   1/30/23
+    This website is a little about me, this IS course I am in as well as a grade calculator
+    to see how well I can do based on grade percentages.-->
+
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    @* <title>@ViewBag.Title</title>*@
+    <meta charset="utf-8" />
+    @*Razor code to set the title and header in body*@
+    <title>@ViewData["Title"]</title>
+    <!--adding css and bootstrap-->
+    <link href="~/css/default.css" rel="stylesheet" />
+    <link href="~/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="~/bootstrap/js/bootstrap.js"></script>
+    <!-- add icon link -->
+    <link rel="icon" href="~/img/icons8-ok-48.png"
+          type="image/x-icon">
+
+</head>
+<body>
+    <nav>
+        <ul>
+
+            <li><a asp-controller="Blah" asp-action="Index">Home</a></li>
+            <li><a asp-controller="Blah" asp-action="GradeCalculator">Grade Calc</a></li>
+        </ul>
+    </nav>
+
+    @*allows each page to have different headers and then rendors to the other pages code*@
+    <h1>@ViewData["Header"]</h1>
+    <div>
+        @RenderBody()
+    </div>
+
+    <center><footer>© 2023 KatSite, Inc. All Rights Reserved</footer></center>
+
+    <!--links to javascript files-->
+    <script src="~/lib/jquery/jquery-3.6.3.min.js"></script>
+    <script src="~/js/GradeCalc.js"></script>
+</body>
+</html>
